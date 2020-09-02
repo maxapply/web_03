@@ -1,0 +1,317 @@
+/* 头部 logo 部分 */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header .header_fl_list,
+.header .header_fr_telPhoto {
+  width: 7%;
+  float: left;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.header .header_logo {
+  width: 85%;
+  float: left;
+  text-align: center;
+}
+
+.header .header_logo img {
+  display: block;
+  width: 12rem;
+  margin: 0 auto;
+}
+
+.header img {
+  display: block;
+  width: 100%;
+}
+
+.header .header_fr_telPhoto {
+  margin-top: .3rem;
+  margin-right: .1rem;
+}
+
+.header .header_fr_telPhoto {
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  /*Safari and Chrome*/
+  animation-direction: alternate;
+  /*轮流反向播放动画。*/
+  animation-timing-function: ease-in-out;
+  /*动画的速度曲线*/
+  /* Safari 和 Chrome */
+  -webkit-animation: mymove 5s infinite;
+  -webkit-animation-direction: alternate;
+  /*轮流反向播放动画。*/
+  -webkit-animation-timing-function: ease-in-out;
+  /*动画的速度曲线*/
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(1);
+    /*开始为原始大小*/
+  }
+
+  25% {
+    transform: scale(1.3);
+    /*放大1.1倍*/
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.3);
+  }
+
+}
+
+@-webkit-keyframes mymove
+
+/*Safari and Chrome*/
+  {
+  0% {
+    transform: scale(1);
+    /*开始为原始大小*/
+  }
+
+  25% {
+    transform: scale(1.3);
+    /*放大1.1倍*/
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.3);
+  }
+}
+
+
+/* 点击导航列表前 */
+.click_before {
+  transform: rotate(0);
+  transtion: all .3s linear;
+  -webkit-transform: rotate(0);
+  -webkit-transtion: all .3s linear;
+}
+
+/* 点击导航列表后 */
+.click_after {
+  transform: rotate(45deg);
+  transtion: all .3s linear;
+  -webkit-transform: rotate(45deg);
+  -webkit-transtion: all .3s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部 轮播图 */
+.header_swiper {
+  width: 100%;
+}
+
+.header_swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.header_swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.header_swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
+/* 导航栏 */
+.nav {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.nav .nav_box {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.nav .nav_box li {
+  width: 32%;
+  height: 5rem;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: .2rem;
+  text-align: center;
+}
+
+.nav .nav_box li:first-child {
+  width: 38%;
+  background-color: #f4b613;
+}
+
+.nav .nav_box li:nth-child(2) {
+  width: 28%;
+  background-color: #ff8a4a;
+}
+
+.nav .nav_box li:nth-child(3) {
+  float: right;
+  margin-right: 0rem;
+  background-color: #fc5265;
+}
+
+
+
+.nav .nav_box li:nth-child(4),
+.nav .nav_box li:nth-child(5) {
+  width: 49.5%;
+  background-color: #6edfd6;
+  margin-bottom: 0rem;
+}
+
+.nav .nav_box li:nth-child(5) {
+  float: right;
+  margin-right: 0rem;
+  background-color: #14c761;
+}
+
+.nav .nav_box li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav .nav_box li img {
+  width: 2rem;
+  margin-top: .5rem;
+}
+
+.nav .nav_box li h3 {
+  font-size: .8rem;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 适配平板 pro */
+@media only screen and (min-width: 1024px) {
+
+  .header .header_logo img {
+    width: 16rem;
+  }
+}

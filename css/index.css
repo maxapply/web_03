@@ -1,0 +1,607 @@
+body {
+  background-color: #f4f4f4;
+}
+
+/* 内容区域 */
+.con {
+  width: 100%;
+}
+
+.con .con_about,
+.con .con_team,
+.con .con_class,
+.con .con_Online,
+.con .con_Case {
+  width: 100%;
+  overflow: hidden;
+}
+
+.con .con_about .title,
+.con .con_team .title,
+.con .con_class .title,
+.con .con_Online .title,
+.con .con_Case .title {
+  width: 100%;
+  padding: .3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.con .con_about .title img,
+.con .con_team .title img,
+.con .con_class .title img,
+.con .con_Online .title img,
+.con .con_Case .title img {
+  display: block;
+  float: left;
+  width: 1rem;
+  margin-top: .2rem;
+}
+
+.con .con_about .title h3,
+.con .con_team .title h3,
+.con .con_class .title h3,
+.con .con_Online .title h3,
+.con .con_Case .title h3 {
+  font-size: 1rem;
+  color: #5A5AAD;
+  float: left;
+  margin: 0rem .5rem;
+}
+
+.con .con_about .title span,
+.con .con_team .title span,
+.con .con_class .title span,
+.con .con_Online .title span,
+.con .con_Case .title span {
+  font-size: .7rem;
+  color: #999;
+  float: left;
+  margin-top: .3rem;
+}
+
+.con .con_about .int_box {
+  width: 100%;
+  padding: .3rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.con .con_about .int_box .img {
+  width: 40%;
+  height: 7.5rem;
+  margin-left: .5rem;
+  float: left;
+  position: absolute;
+  z-index: 1;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.con .con_about .int_box .img .about_img .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.con .con_about .int_box .text {
+  float: right;
+  width: 90%;
+  height: 9.5rem;
+  border: 1px solid #b8974d;
+  padding: .5rem 0rem;
+  padding-left: 36%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.con .con_about .int_box .text h3 {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: #ff8800;
+}
+
+.con .con_about .int_box .text p {
+  text-indent: 2em;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+
+.con .con_about .int_box .text a {
+  width: 100%;
+  display: block;
+  font-size: .7rem;
+  margin-top: .3rem;
+}
+
+.con .con_about .int_box .text span {
+  font-size: .75rem;
+  padding: .2rem .3rem;
+  background-color: #97CBFF;
+  color: #fff;
+  border-radius: .3rem;
+  margin-left: 30%;
+}
+
+/* 医生团队 */
+
+.con .con_team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.con .con_team .team_box {
+  width: 100%;
+  text-align: center;
+}
+
+.con .con_team .team_box img {
+  display: block;
+  width: 100%;
+}
+
+.shift_right{
+  animation: shift_right 2s linear;
+}
+@keyframes shift_right {
+  0% {
+    transform: translateX(-18rem)
+  }
+  100% {
+    transform: translateX(0rem)
+
+  }
+}
+
+
+.shift_left{
+  animation: shift_left 2s linear;
+}
+@keyframes shift_left {
+  0% {
+    transform: translateX(18rem)
+  }
+  100% {
+    transform: translateX(0rem)
+
+  }
+}
+
+
+
+.team_but {
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team_but button {
+  position: relative;
+  margin: 0;
+  padding: .2rem .5rem;
+  height: 1.6rem;
+  width: 5.5rem;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  color: #1d89ff;
+  font-weight: 400;
+
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  animation: rotate 0.7s ease-in-out both infinite;
+}
+
+.team_but button span {
+  color: #ff8800;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  animation: storm 0.7s ease-in-out both infinite;
+  animation-delay: 0.06s;
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+
+
+.btn-pill:before,
+.btn-pill:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #1d89ff;
+  content: '';
+  opacity: 0;
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+
+
+.btn-pill:before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.btn-pill:after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+/* 案例中心 */
+.case_box {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.case_box .case_list {
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: .5rem;
+  background-color: #fff;
+  padding: .5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.case_box .case_list img:nth-child(1) {
+  display: block;
+  width: 35%;
+  float: left;
+  margin-top: .3rem;
+}
+
+.case_box .case_list img:nth-child(3) {
+  width: 100%;
+  margin-top: .8rem;
+}
+
+.case_box .case_list .fr {
+  width: 58%;
+  float: right;
+}
+
+.case_box .case_list .fr h3 {
+  font-size: .8rem;
+  color: #ff8800;
+}
+
+.case_box .case_list .fr p {
+  font-size: .7rem;
+  color: #333;
+}
+
+.case_box .case_list .fr p strong {
+  font-size: .75rem;
+  color: #0080FF;
+}
+
+.case_box .case_list .case_but {
+  width: 100%;
+  height: 1.5rem;
+  margin-top: .5rem;
+}
+
+.case_box .case_list .case_but a {
+  display: block;
+  float: left;
+  width: 49%;
+  line-height: 1.5rem;
+  border-right: 2px solid #0080FF;
+  text-align: center;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #ddd;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.case_box .case_list .case_but a:last-child {
+  border-right: 0px;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 医生课堂 */
+
+.con .con_class {
+  height: 12rem;
+  background: url(../images/index/class_bgc.png)no-repeat center/ 100% 12rem;
+}
+
+.con .con_class .class_box {
+  width: 100%;
+
+}
+
+.con .con_class .class_box ul {
+  width: 90%;
+  padding: 0rem .3rem;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px #333;
+  margin: 0 auto;
+  border-radius: .5rem;
+}
+
+.con .con_class .class_box ul li {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.con .con_class .class_box ul li:last-child {
+  border-bottom: 0px;
+}
+
+.con .con_class .class_box ul li img {
+  float: left;
+  width: .8rem;
+  margin-right: .5rem;
+  vertical-align: middle;
+  margin-top: .2rem;
+}
+
+.con .con_class .class_box ul li a {
+  font-size: .7rem;
+  line-height: 1.5rem;
+  float: left;
+  color: #333;
+}
+
+.con .con_class .class_box ul li span {
+  font-size: .7rem;
+  line-height: 1.5rem;
+  float: right;
+  color: #333;
+  margin-right: .5rem;
+}
+
+/* 在线预约 */
+.con .con_Online {
+  width: 100%;
+}
+
+.con .con_Online .Online_box {
+  width: 100%;
+  overflow: hidden;
+  padding: .5rem;
+  box-sizing: border-box;
+
+}
+
+.con .con_Online .Online_box .Online_text {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.con .con_Online .Online_box .Online_fl,
+.con .con_Online .Online_box .Online_fr {
+  float: left;
+  width: 48.5%;
+  margin-bottom: .15rem;
+  margin-right: 3%;
+  padding: .5rem;
+  box-sizing: border-box;
+
+}
+
+.con .con_Online .Online_box .Online_fr {
+  float: right;
+  margin-right: 0%;
+}
+
+.con .con_Online .Online_box div span {
+  display: block;
+  font-size: .75rem;
+  color: #333;
+  margin-bottom: .09rem;
+}
+
+.con .con_Online .Online_box div input {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1.3rem;
+  padding: 0 .5rem;
+  font-size: .7rem;
+  color: #666;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.con .con_Online .Online_box .Online_but {
+  width: 100%;
+  padding: .5rem;
+  box-sizing: border-box;
+  float: left;
+}
+
+.con .con_Online .Online_box .Online_but textarea {
+  padding: 0.3rem .5rem;
+  width: 94%;
+  height: 3rem;
+  font-size: .7rem;
+  color: #666;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin-top: .5rem;
+}
+
+
+
+.con .con_Online .Online_box .Online_text .index-form-btn {
+  width: 100%;
+  float: left;
+  margin-bottom: .5rem;
+}
+
+
+
+.con .con_Online .Online_box .Online_text .index-form-btn input {
+  width: 45%;
+  float: left;
+}
+
+
+.con .con_Online .Online_box .Online_text .index-form-btn .sub {
+  margin: 0% 3%;
+  background: #5A5AAD;
+  color: #fff;
+  font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+  width: 100%;
+  height: 10rem;
+}
+
+
+
+
+
+/* 适配平板 */
+@media only screen and (max-width: 768px) {
+
+  .con .con_about .int_box .text {
+    height: 7.7rem;
+    padding-top: .1rem;
+  }
+
+  .con .con_about .int_box .img {
+    height: 5.8rem;
+  }
+
+
+
+  .con .con_about .int_box .text h3,
+  .con .con_about .int_box .text p {
+    margin-bottom: .1rem;
+  }
+}
+
+/* 适配 Photo6、7、8Plus */
+@media only screen and (max-width: 414px) {
+  .con .con_about .int_box img {
+    margin-top: .5rem;
+  }
+
+  .con .con_about .int_box .text {
+    height: 8.5rem;
+    padding-top: .3rem;
+  }
+
+  .team_but button {
+    height: 1.5rem;
+    padding: 0rem;
+  }
+}
+
+
+
+
+/* 适配 Galaxy S5 */
+@media only screen and (max-width: 360px) {
+
+  .con .con_about .int_box .text {
+    height: 9rem;
+  }
+}
+
+/* 适配 Photo 5s */
+@media only screen and (max-width: 320px) {
+  .con .con_about .int_box .img {
+    margin-top: 1.5rem;
+    height: 6.8rem;
+  }
+
+  .con .con_about .int_box .text {
+    height: 10rem;
+  }
+}
