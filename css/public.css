@@ -1,11 +1,14 @@
 /* 头部 logo 部分 */
 .header {
-  width: 100%;
+  max-width: 1024px;
   text-align: center;
   padding: .3rem .5rem;
   box-sizing: border-box;
   overflow: hidden;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 
 .header .header_fl_list,
@@ -13,7 +16,7 @@
   width: 7%;
   float: left;
   text-align: center;
-  margin-top: .5rem;
+  margin-top: .4rem;
 }
 
 .header .header_logo {
@@ -136,6 +139,7 @@
 /* 头部 轮播图 */
 .header_swiper {
   width: 100%;
+  margin-top: 2.5rem;
 }
 
 .header_swiper .swiper-container {
@@ -451,7 +455,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 998;
+  z-index: 0;
   background: rgba(0, 0, 0, .4);
 }
 
@@ -541,6 +545,9 @@
 
 /* 适配平板 pro */
 @media only screen and (min-width: 1024px) {
+  .header_swiper {
+    margin-top: 3rem;
+  }
 
   .header .header_logo img {
     width: 16rem;
@@ -554,4 +561,8 @@
 }
 
 /* 适配平板 */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  /* .header_swiper {
+    margin-top: 2.5rem;
+  } */
+}
