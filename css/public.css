@@ -238,6 +238,237 @@
 }
 
 
+/* 底部按钮 */
+.bottom_button {
+  width: 80%;
+  height: 2rem;
+  background-color: #5A5AAD;
+  box-shadow: 0px 3px 10px #666;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 2;
+}
+
+.bottom_button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border-right: 1px solid #fff;
+}
+
+.bottom_button div {
+  text-align: center;
+}
+
+.bottom_button a:last-child {
+  border-right: 0px;
+
+}
+
+.bottom_button div img {
+  width: 1.5rem;
+  margin-top: .2rem;
+}
+
+/* 底部内容开始 */
+.glfe_footer {
+  width: 100%;
+  background-color: #303030;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.glfe_footer>a {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin-top: 1rem;
+  margin-left: .5rem;
+}
+
+.glfe_footer>a img {
+  display: block;
+  width: 100%;
+}
+
+.foot_contact {
+  float: right;
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: .65rem;
+  border-left: 1px solid #f0f0f0;
+  color: #fff;
+  margin-top: 1.3rem;
+}
+
+.foot_contact p a {
+  color: #fff;
+}
+
+.copyright_cbox {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 4rem;
+
+}
+
+.copyright_cbox a {
+  color: #fff;
+  font-size: .65rem;
+}
+
+
+/* 左侧导航栏 */
+.fl_nav {
+  box-shadow: 0px 4px 5px 5px #333;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 4;
+  width: 10rem;
+  background-color: #666;
+  overflow-y: auto;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
+  transition: transform .4s 0s, visibility 0s .4s;
+  -webkit-transform: translateX(-10rem);
+  -moz-transform: translateX(-10rem);
+  -ms-transform: translateX(-10rem);
+  -o-transform: translateX(-10rem);
+  transform: translateX(-10rem);
+}
+
+.nav_fl {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+  transition: transform .4s 0s, visibility 0s 0s;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fl_nav ul {
+  width: 100%;
+}
+
+.fl_nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.fl_nav ul li:first-child {
+  background-color: #fff;
+  margin-top: 0rem;
+  height: 3rem;
+  padding-top: .5rem;
+  box-sizing: border-box;
+}
+
+.fl_nav ul li:first-child img {
+  width: 100%;
+}
+
+.fl_nav ul li img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fl_nav ul li:nth-child(13) a span {
+  margin-right: 1rem;
+}
+
+.fl_nav ul li:nth-child(14) a span {
+  margin-right: 1.6rem;
+}
+
+.fl_nav ul li:last-child a span {
+  margin-right: 2.5rem;
+}
+
+.fl_nav ul li a {
+  color: #f0f0f0;
+}
+
+.fl_nav ul li a span {
+  display: inline-block;
+  width: 1.5rem;
+  text-align: center;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.fl_nav ul li a span img {
+  display: block;
+  width: 100%;
+}
+
+/* 遮罩层 */
+.backdrop {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, .4);
+}
+
+.backdrop1 {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, .4);
+}
+
+
 
 
 
@@ -314,4 +545,13 @@
   .header .header_logo img {
     width: 16rem;
   }
+
+  .bottom_button {
+    width: 40%;
+  }
+
+
 }
+
+/* 适配平板 */
+@media only screen and (min-width: 768px) {}

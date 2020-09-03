@@ -3,7 +3,8 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
-
+  position: relative;
+  overflow: hidden;
 }
 
 * {

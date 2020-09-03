@@ -29,7 +29,6 @@
     </div>
   </header>
 
-
   <!-- 头部 轮播图 -->
   <div class="header_swiper">
     <!-- Swiper -->
@@ -85,7 +84,8 @@
 
   </nav>
 
-  <!-- 内容区域 -->
+
+  <!-- 主体内容开始 -->
   <div class="con">
 
     <!-- 关于我们 -->
@@ -158,8 +158,8 @@
                 </div>
                 <img src="./images/index/case_list_02.jpg" alt="">
                 <div class="case_but">
-                  <a href="#">咨询医生</a>
-                  <a href="#">了解详情</a>
+                  <a href="#"><span><img src="./images/details.png" alt=""></span>咨询医生</a>
+                  <a href="#"><span><img src="./images/consulting_service.png" alt=""></span>了解详情</a>
                 </div>
               </div>
             </div>
@@ -174,8 +174,8 @@
                 </div>
                 <img src="./images/index/case_list_04.jpg" alt="">
                 <div class="case_but">
-                  <a href="#">咨询医生</a>
-                  <a href="#">了解详情</a>
+                  <a href="#"><span><img src="./images/details.png" alt=""></span>咨询医生</a>
+                  <a href="#"><span><img src="./images/consulting_service.png" alt=""></span>了解详情</a>
                 </div>
               </div>
             </div>
@@ -190,12 +190,15 @@
                 </div>
                 <img src="./images/index/case_list_06.png" alt="">
                 <div class="case_but">
-                  <a href="#">咨询医生</a>
-                  <a href="#">了解详情</a>
+                  <a href="#"><span><img src="./images/details.png" alt=""></span>咨询医生</a>
+                  <a href="#"><span><img src="./images/consulting_service.png" alt=""></span>了解详情</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
 
@@ -288,33 +291,89 @@
 
       </div>
     </div>
+  </div>
+  <!-- 主体内容结束 -->
 
 
+  <!-- 底部按钮 -->
+  <div class="bottom_button">
+    <a href="#">
+      <div class="but_01"><img src="./images/home.png" alt=""></div>
+    </a>
+    <a href="#">
+      <div class="but_02"><img src="./images/customer_service.png" alt=""></div>
+    </a>
+    <a href="#">
+      <div class="but_03"><img src="./images/but_telPhoto.png" alt=""></div>
+    </a>
+    <a href="#">
+      <div class="but_04"><img src="./images/Navigation.png" alt=""></div>
+    </a>
 
   </div>
 
+  <!-- 底部内容开始 -->
+  <footer class="glfe_footer">
+    <a href="#">
+      <img src="./images/footer_logo.png" alt="">
+    </a>
+    <div class="foot_contact">
+      <p><i></i>在线咨询热线：<a href="#">0532-68972542</a></p>
+      <p><i></i>坐诊时间：9:00-18:00</p>
+      <p><i></i>北京优贝口腔昌平牙科诊所</a></p>
+    </div>
+    <div class="copyright_cbox">
+      <a href="#">备案号：京ICP备17039954号-1</a>
+    </div>
+  </footer>
 
-  <div class="box"></div>
 
+  <!-- 左侧导航栏 -->
+  <div class="fl_nav">
+    <ul>
+      <li><a href="#"><img src="./images/logo.png" alt=""></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>美学正畸</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>美学修复</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>牙齿美白</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>口腔综合</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>儿童牙科</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>冷光美白</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>3d美容冠</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>陶瓷矫正</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>隐形矫正</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>根管治疗</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>mrc矫正</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>瓷贴面</a></li>
+      <li><a href="#"><span><img src="./images/tooth.png" alt=""></span>自锁</a></li>
+    </ul>
 
+  </div>
 
-
-
-
-
-
-
-
-
+  <!-- 遮罩层 -->
+  <div class="backdrop"></div>
 
   <script>
     // 点击头部导航列表 添加类名 实现旋转动画
     $('.header_fl_list').click(function () {
       if ($(this).hasClass("click_before")) {
         $(this).removeClass("click_before").addClass("click_after");
+        // 左侧菜单导航栏 显示
+        $('.fl_nav').addClass('nav_fl')
+        // 添加遮罩层 并显示
+        $('.backdrop').addClass('backdrop1')
+
       } else {
         $(this).removeClass("click_after").addClass("click_before");
       }
+    })
+
+    $('.backdrop').click(function () {
+
+      // 左侧导航栏 隐藏
+      $('.fl_nav').removeClass('nav_fl')
+
+      // 关闭遮罩层
+      $(this).removeClass('backdrop1')
     })
   </script>
 
@@ -355,47 +414,40 @@
       spaceBetween: 30,
       centeredSlides: true,
       loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+
+      pagination: {
+        el: '.swiper-pagination',
+      }
     });
 
-
-
-
-
-  // 医生团队 移入动画
-
-$(function(){
-    // 右移动
-    function getTop_fr(x,y){
-        document.addEventListener('touchmove',function(e){
-        if(e.touches[0].pageY>=$(y).offset().top) {
-        $(x).addClass('shift_right')
-        }
-      })
-     }
-
-     getTop_fr('.team_box','.nav_box')
-     getTop_fr('.class_box','.team_but')
-
-
-    // 左移动
-    function getTop_fl(x,y){
-      document.addEventListener('touchmove',function(e){
-
-      if(e.touches[0].pageY>=$(y).offset().top) {
-      $(x).addClass('shift_left')
+    // 医生团队 移入动画
+    $(function () {
+      // 右移动
+      function getTop_fr(x, y) {
+        document.addEventListener('touchmove', function (e) {
+          if (e.touches[0].pageY >= $(y).offset().top) {
+            $(x).addClass('shift_right')
+          }
+        })
       }
-      })
-    }
-    // 1、添加动画的元素    2、元素相对于顶部的距离
-     getTop_fl('.team_but','.nav_box')
-     getTop_fl('.Online_box','.team_but')
 
-})
+      getTop_fr('.team_box', '.nav_box')
+      getTop_fr('.class_box', '.team_but')
 
+
+      // 左移动
+      function getTop_fl(x, y) {
+        document.addEventListener('touchmove', function (e) {
+
+          if (e.touches[0].pageY >= $(y).offset().top) {
+            $(x).addClass('shift_left')
+          }
+        })
+      }
+      // 1、添加动画的元素    2、元素相对于顶部的距离
+      getTop_fl('.team_but', '.nav_box')
+      getTop_fl('.Online_box', '.team_but')
+    })
   </script>
 
 </body>

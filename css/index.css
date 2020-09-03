@@ -146,30 +146,32 @@ body {
   width: 100%;
 }
 
-.shift_right{
+.shift_right {
   animation: shift_right 2s linear;
 }
+
 @keyframes shift_right {
   0% {
     transform: translateX(-18rem)
   }
+
   100% {
     transform: translateX(0rem)
-
   }
 }
 
 
-.shift_left{
+.shift_left {
   animation: shift_left 2s linear;
 }
+
 @keyframes shift_left {
   0% {
     transform: translateX(18rem)
   }
+
   100% {
     transform: translateX(0rem)
-
   }
 }
 
@@ -332,13 +334,14 @@ body {
   float: left;
   width: 49%;
   line-height: 1.5rem;
-  border-right: 2px solid #0080FF;
+  border-right: 2px solid #fff;
   text-align: center;
   font-size: .8rem;
-  color: #fff;
-  background-color: #ddd;
+  color: #5A5AAD;
+  background-color: #ACD6FF;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
+  font-weight: 600;
 }
 
 .case_box .case_list .case_but a:last-child {
@@ -347,8 +350,27 @@ body {
   border-bottom-left-radius: 0rem;
   border-top-right-radius: .5rem;
   border-bottom-right-radius: .5rem;
+  color: #555;
 }
 
+.con_Case .swiper-pagination {
+  bottom: -3px;
+}
+
+.case_box .case_list .case_but a span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  margin-right: .3rem;
+
+}
+
+.case_box .case_list .case_but a span img {
+  display: block;
+  width: 100%;
+  margin-top: .2rem;
+}
 
 
 
@@ -535,12 +557,6 @@ body {
 
 
 
-
-
-.box {
-  width: 100%;
-  height: 10rem;
-}
 
 
 
