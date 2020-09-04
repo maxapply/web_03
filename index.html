@@ -18,7 +18,7 @@
 <body>
   <!-- 头部 logo 部分 -->
   <header class="header">
-    <div class="header_fl_list click_before">
+    <div class="header_fl_list click_after">
       <a href="#"><img src="./images/header_list.png" alt=""></a>
     </div>
     <div class="header_logo">
@@ -355,25 +355,30 @@
   <script>
     // 点击头部导航列表 添加类名 实现旋转动画
     $('.header_fl_list').click(function () {
-      if ($(this).hasClass("click_before")) {
+
         $(this).removeClass("click_before").addClass("click_after");
         // 左侧菜单导航栏 显示
         $('.fl_nav').addClass('nav_fl')
-        // 添加遮罩层 并显示
-        $('.backdrop').addClass('backdrop1')
+        // 遮罩层 显示
+        $('.backdrop').show()
 
-      } else {
-        $(this).removeClass("click_after").addClass("click_before");
-      }
     })
 
-    $('.backdrop').click(function () {
 
+     // 点击遮罩层
+    $('.backdrop').click(function (e) {
+
+      // 头部导航列表 旋转
+      $('.header_fl_list').removeClass('click_after')
+
+
+      // 阻止默认行为
+      e.preventDefault()
       // 左侧导航栏 隐藏
       $('.fl_nav').removeClass('nav_fl')
 
       // 关闭遮罩层
-      $(this).removeClass('backdrop1')
+      $(this).hide()
     })
   </script>
 
