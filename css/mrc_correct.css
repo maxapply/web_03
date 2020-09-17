@@ -1,0 +1,388 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .8rem;
+  color: #2894FF;
+}
+
+.conBox_01,
+.conBox_02,
+.conBox_03,
+.conBox_04,
+.conBox_05,
+.conBox_06,
+.conBox_07,
+.conBox_08 {
+  width: 100%;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: .5rem;
+}
+
+/* 儿童MRC矫正概述 */
+.conBox01_list {
+  width: 100%;
+  overflow: hidden;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.conBox01_list img {
+  display: block;
+  width: 35%;
+  float: left;
+}
+
+.conBox01_list .conBox01_text {
+  width: 60%;
+  float: right;
+
+
+}
+
+.conBox01_list .conBox01_text p {
+  font-size: .7rem;
+  text-indent: 2em;
+  margin-top: .5rem;
+  text-align: left;
+}
+
+/* 为什么必须要进行牙齿矫正？ */
+.conBox02_list,
+.conBox03_list {
+  width: 100%;
+  display: flex;
+  margin-top: .5rem;
+}
+
+.conBox02_list li,
+.conBox03_list li {
+  flex: 1;
+  margin: 0rem .1rem;
+  text-align: center;
+  border: 1px solid #C7C7E2;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: #C7C7E2;
+  padding-bottom: .3rem;
+  box-sizing: border-box;
+}
+
+.conBox02_list li img,
+.conBox03_list li img {
+  display: block;
+  width: 100%;
+  margin-bottom: .3rem;
+}
+
+.conBox02_list li h3,
+.conBox03_list li h3 {
+  font-size: .7rem;
+  line-height: 1rem;
+  color: #333;
+}
+
+/* 如何有效防护儿童牙齿疾病 */
+.conBox_03>p {
+  font-size: .7rem;
+  text-indent: 2em;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.conBox03_list li {
+  margin: 0 .5rem;
+  background-color: #4787bd;
+}
+
+.conBox03_list li h3 {
+  color: #fff;
+}
+
+.conBox03_list li h3:last-child {
+  margin-top: .5rem;
+}
+
+/* 牙齿不齐四大危害 */
+.conBox_04_list {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.conBox_04_list li {
+  width: 48%;
+  float: left;
+  border: 1px solid #7194c3;
+  border-radius: .5rem;
+  padding: .3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.conBox_04_list li:nth-child(2n) {
+  float: right;
+}
+
+.conBox_04_list li:nth-child(3),
+.conBox_04_list li:nth-child(4) {
+  margin-top: .5rem;
+}
+
+
+
+
+
+.conBox_04_list li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  margin-left: .5rem;
+}
+
+.conBox_04_list li h3 span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+  border-radius: 50%;
+  background-color: #7194c3;
+  color: #fff;
+}
+
+.conBox_04_list li p {
+  font-size: .7rem;
+}
+
+/* 科学治疗――从孩子第一颗乳牙开始 */
+.conBox_04_topList {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.conBox_04_topList li {
+  flex: 1;
+  font-size: .75rem;
+  margin: .3rem;
+  border-radius: .5rem;
+  background-color: #ADADAD;
+  text-align: center;
+  color: #000;
+  padding: .3rem;
+  box-sizing: border-box;
+  font-weight: bolder;
+  position: relative;
+}
+
+.conBox_04_topList li.selected {
+  background-color: #ff8800;
+  color: #fff;
+}
+
+.conBox_04_topList li.selected:after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  bottom: -.3rem;
+  transform: translateX(-50%);
+  margin: 0rem auto;
+  width: 0;
+  height: 0;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  border-top: .5rem solid #ff8800;
+}
+
+.conBox_04_topList li:nth-child(2),
+.conBox_04_topList li:nth-child(3) {
+  padding-top: .8rem;
+}
+
+.conBox_04_ButList {
+  width: 98%;
+  margin: .5rem auto;
+  overflow: hidden;
+  background-color: #D8D8EB;
+  padding-bottom: .5rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+}
+
+.conBox_04_ButList>img {
+  display: block;
+  width: 25%;
+  float: left;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  margin-left: .3rem;
+}
+
+.conBox_04_ButList .conBox_04_ButText {
+  width: 70%;
+  padding: 0rem .5rem;
+  box-sizing: border-box;
+  float: right;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+
+
+.conBox_04_ButList .conBox_04_ButText h3 {
+  font-size: .75rem;
+  line-height: 1.3rem;
+}
+
+.conBox_04_ButList .conBox_04_ButText p {
+  font-size: .7rem;
+  text-align: left;
+  margin-top: .5rem;
+}
+
+.conBox_04_ButList .conBox_04_ButText p span {
+  display: inline-block;
+  font-size: .7rem;
+  line-height: .8rem;
+  padding: .1rem .5rem;
+  background-color: #398de8;
+  border-radius: .5rem;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+/* MRC 新型儿童矫治器6大优势 */
+/* 儿童矫正与青少年矫正有何不同？ */
+.conBox_05_list,
+.conBox_06_list {
+  width: 100%;
+  text-align: center;
+  margin-top: .5rem;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.conBox_05_list img,
+.conBox_06_list img {
+  display: block;
+  width: 100%;
+}
+
+/* 优贝口腔美齿医师推荐 */
+.conBox_07 ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.conBox_07 ul li:last-child {
+  float: right;
+}
+
+.conBox_07 ul li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox_07 ul li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #CE0000;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li p {
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.conBox_07 ul li a {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #ff8800;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+
+/* 热门问题 */
+.conBox_08 .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}

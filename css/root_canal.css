@@ -1,0 +1,369 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+/* 内容区域开始 */
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .8rem;
+  color: #2894FF;
+}
+
+.title h3 span {
+  color: #9F4D95;
+}
+
+.conBox_01,
+.conBox_02,
+.conBox_03,
+.conBox_04,
+.conBox_05,
+.conBox_06,
+.conBox_07,
+.conBox_08 {
+  width: 100%;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.conBox01_list {
+  width: 80%;
+  margin: .8rem auto;
+  overflow: hidden;
+}
+
+.conBox01_list li {
+  float: left;
+  width: 44%;
+  background: #fff;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+}
+
+.conBox01_list li:nth-child(2n) {
+  float: right;
+}
+
+.conBox01_list li:nth-child(3),
+.conBox01_list li:nth-child(4) {
+  margin-top: 1rem;
+}
+
+.conBox01_list li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox01_list li .conBox01_text {
+  width: 100%;
+  background: #004ea2;
+  padding-bottom: 4%;
+  text-align: center;
+  color: #fff;
+}
+
+.conBox01_list li .conBox01_text h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+.conBox01_list li .conBox01_text p {
+  font-size: .7rem;
+  line-height: 1.2rem;
+}
+
+.conBox_01>a,
+.conBox_03>a,
+.conBox_04>a,
+.conBox_05>a {
+  display: inline-block;
+  padding: .3rem 1rem;
+  font-size: .75rem;
+  text-align: center;
+  background: #ed6d00;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 0 #b85500;
+}
+
+/* 优贝【显微 + 热牙胶】根管治疗 */
+.conBox_02 .conBox_02_img {
+  text-align: center;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  background-color: #004ea2;
+  margin-top: .5rem;
+}
+
+.conBox_02 img,
+.conBox_03 img {
+  display: block;
+  width: 100%;
+}
+
+.conBox02_list {
+  width: 100%;
+  margin: .5rem 0;
+  overflow: hidden;
+}
+
+.conBox02_list li {
+  float: left;
+  width: 23%;
+  margin: 0 1%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: .5rem;
+}
+
+.conBox02_list li .conBox02_text {
+  width: 100%;
+  background: #004ea2;
+  text-align: center;
+  color: #fff;
+  padding: .3rem;
+  box-sizing: border-box;
+}
+
+.conBox02_list li h3 {
+  font-size: .73rem;
+  line-height: 1.5rem;
+  border-bottom: 2px solid #fff;
+}
+
+.conBox02_list li p {
+  font-size: .7rem;
+  line-height: 1.3rem;
+  text-align: left
+}
+
+
+/* 根管精品案例展示 */
+.conBox04_text {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.conBox04_text p {
+  font-size: .7rem;
+  line-height: 1.5rem;
+  background-color: #004ea2;
+  color: #fff;
+}
+
+.conBox04_text img {
+  display: block;
+  width: 100%;
+}
+
+.conBox04_text h5 {
+  font-size: .75rem;
+  color: #333;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-top: .5rem;
+}
+
+.conBox04_text span {
+  display: block;
+  font-size: .7rem;
+  color: #333;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+/* 数字化根管治疗 */
+.conBox_05>p {
+  font-size: .7rem;
+  line-height: 1.5rem;
+  background-color: #004ea2;
+  color: #fff;
+  margin-top: .3rem;
+}
+
+.conBox_05 .conBox05_list {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.conBox_05 .conBox05_list li {
+  flex: 1;
+  margin: 0rem .25rem;
+  background-color: #6FB7B7;
+  text-align: center;
+  border-radius: .5rem;
+  padding: .3rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.conBox_05 .conBox05_list li h3 {
+  font-size: .75rem;
+}
+
+
+.conBox_05 .conBox05_list li p {
+  font-size: .7rem;
+}
+
+.conBox05_text {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.conBox05_text li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #C4E1FF;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+
+  background-color: #C4E1FF;
+}
+
+.conBox05_text li:nth-child(1),
+.conBox05_text li:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.conBox05_text li:nth-child(2n) {
+  float: right;
+}
+
+.conBox05_text li img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.conBox05_text li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+.conBox05_text li p {
+  font-size: .7rem;
+  text-align: left;
+}
+
+
+/* 优贝口腔美齿医师推荐 */
+.conBox_07 ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.conBox_07 ul li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.conBox_07 ul li:last-child {
+  float: right;
+}
+
+.conBox_07 ul li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox_07 ul li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #CE0000;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li p {
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.conBox_07 ul li a {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #ff8800;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+
+/* 热门问题 */
+.conBox_08 .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}

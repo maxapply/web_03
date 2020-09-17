@@ -92,8 +92,10 @@ body {
   float: right;
   width: 90%;
   height: 9.5rem;
+
   border: 1px solid #b8974d;
   padding: .5rem 0rem;
+  padding-right: .5rem;
   padding-left: 36%;
   box-sizing: border-box;
   background-color: #fff;
@@ -127,6 +129,47 @@ body {
   margin-left: 30%;
 }
 
+.con .con_menu_list {
+  width: 100%;
+  overflow: hidden;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.con .con_menu_list li {
+  width: 25%;
+  float: left;
+  padding: .3rem .3rem;
+  box-sizing: border-box;
+}
+
+.con .con_menu_list li a {
+  display: block;
+  width: 100%;
+  border: 1px solid #94a5bb;
+  background-color: #94a5bb;
+  text-align: center;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.con .con_menu_list li a .menu_img {
+  width: 100%;
+  background-color: #fff;
+}
+
+.con .con_menu_list li a img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.con .con_menu_list li a h3 {
+  color: #fff;
+  font-size: .7rem;
+  line-height: 1.3rem;
+}
+
 /* 医生团队 */
 
 .con .con_team {
@@ -146,34 +189,7 @@ body {
   width: 100%;
 }
 
-.shift_right {
-  animation: shift_right 2s linear;
-}
 
-@keyframes shift_right {
-  0% {
-    transform: translateX(-18rem)
-  }
-
-  100% {
-    transform: translateX(0rem)
-  }
-}
-
-
-.shift_left {
-  animation: shift_left 2s linear;
-}
-
-@keyframes shift_left {
-  0% {
-    transform: translateX(18rem)
-  }
-
-  100% {
-    transform: translateX(0rem)
-  }
-}
 
 
 
@@ -273,6 +289,9 @@ body {
   transform: translate(50%, 0) scale(1.1);
 }
 
+
+
+
 /* 案例中心 */
 .case_box {
   width: 100%;
@@ -288,7 +307,11 @@ body {
   background-color: #fff;
   padding: .5rem;
   box-sizing: border-box;
-  margin-bottom: 1rem;
+
+}
+
+.case_box .case_list img {
+  border-radius: .5rem;
 }
 
 .case_box .case_list img:nth-child(1) {
@@ -353,8 +376,11 @@ body {
   color: #555;
 }
 
-.con_Case .swiper-pagination {
-  bottom: -3px;
+
+.con_Case .case_box .swiper-pagination {
+  position: relative;
+  z-index: 0;
+  height: 2rem;
 }
 
 .case_box .case_list .case_but a span {
@@ -370,6 +396,12 @@ body {
   display: block;
   width: 100%;
   margin-top: .2rem;
+}
+
+.case_box .swiper-pagination {
+  position: relative;
+  z-index: 0;
+  height: 2rem;
 }
 
 
@@ -390,13 +422,13 @@ body {
 /* 医生课堂 */
 
 .con .con_class {
-  height: 12rem;
-  background: url(../images/index/class_bgc.png)no-repeat center/ 100% 12rem;
+  height: 14rem;
+  background: url(../images/index/class_bgc.png)no-repeat center/ 100% 14rem;
 }
 
 .con .con_class .class_box {
   width: 100%;
-
+  margin-bottom: .8rem;
 }
 
 .con .con_class .class_box ul {
@@ -442,6 +474,90 @@ body {
   margin-right: .5rem;
 }
 
+.con .con_class .class_but {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.con .con_class .class_but a {
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  font-size: .7rem;
+  color: #fff;
+  border-radius: .5rem;
+  font-weight: 700;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  margin: 0 2rem;
+}
+
+.green.button {
+  -webkit-animation-name: greenPulse;
+  animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+
+.orange.button {
+  -webkit-animation-name: orangePulse;
+  -webkit-animation-duration: 2s;
+}
+
+.orangellow.button {
+  -webkit-animation-name: orangellowPulse;
+  -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes greenPulse {
+  from {
+    background-color: #fc5265;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #FF2D2D;
+    -webkit-box-shadow: 0 0 27px #FF2D2D;
+  }
+
+  to {
+    background-color: #fc5265;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+
+
+
+@-webkit-keyframes orangellowPulse {
+  from {
+    background-color: #D26900;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #FF8000;
+    -webkit-box-shadow: 0 0 27px #FF8000;
+  }
+
+  to {
+    background-color: #D26900;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 在线预约 */
 .con .con_Online {
   width: 100%;
@@ -479,6 +595,27 @@ body {
   margin-right: 0%;
 }
 
+.con .con_Online .Online_box .Online_fr select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.5rem;
+  padding: 0.2rem .5rem;
+  font-size: .7rem;
+  color: #666;
+  background: #f4f4f4;
+  border-radius: 5px;
+  border-top: 2px solid #999;
+  border-left: 2px solid #999;
+  border-right: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.con .con_Online .Online_box .Online_fr select option {
+  line-height: 1.5rem;
+  font-size: .7rem;
+}
+
 .con .con_Online .Online_box div span {
   display: block;
   font-size: .75rem;
@@ -489,7 +626,7 @@ body {
 .con .con_Online .Online_box div input {
   box-sizing: border-box;
   width: 100%;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   padding: 0 .5rem;
   font-size: .7rem;
   color: #666;
@@ -515,6 +652,11 @@ body {
   margin-top: .5rem;
 }
 
+.Online_text i {
+  font-size: .75rem !important;
+  color: #ff0000 !important;
+}
+
 
 
 .con .con_Online .Online_box .Online_text .index-form-btn {
@@ -538,6 +680,12 @@ body {
   font-size: .8rem;
 }
 
+.Online_text>span {
+  padding: .5rem !important;
+  box-sizing: border-box !important;
+  font-size: .7rem !important;
+  color: #ff8800 !important;
+}
 
 
 
@@ -556,6 +704,13 @@ body {
 
 
 
+
+/* 适配平板 pro */
+@media only screen and (min-width: 1024px) {
+  .case_box .swiper-pagination {
+    margin-top: .5rem;
+  }
+}
 
 
 
@@ -580,6 +735,15 @@ body {
   .con .con_about .int_box .text p {
     margin-bottom: .1rem;
   }
+
+  .case_box .swiper-pagination {
+    margin-top: .5rem;
+    height: 1rem;
+  }
+
+
+
+
 }
 
 /* 适配 Photo6、7、8Plus */
@@ -591,12 +755,23 @@ body {
   .con .con_about .int_box .text {
     height: 8.5rem;
     padding-top: .3rem;
+
   }
 
   .team_but button {
     height: 1.5rem;
     padding: 0rem;
   }
+
+  .con .con_class .class_box {
+    margin-bottom: .3rem;
+  }
+
+  .con .con_class .class_but {
+    padding: 0rem;
+  }
+
+
 }
 
 
@@ -608,6 +783,8 @@ body {
   .con .con_about .int_box .text {
     height: 9rem;
   }
+
+
 }
 
 /* 适配 Photo 5s */
@@ -620,4 +797,10 @@ body {
   .con .con_about .int_box .text {
     height: 10rem;
   }
+
+  .con .con_class {
+    height: 14.5rem;
+  }
+
+
 }

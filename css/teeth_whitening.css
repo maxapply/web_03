@@ -1,0 +1,518 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  text-align: center;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.zxbtn {
+  font-size: .7rem;
+  display: block;
+  width: 40%;
+  border: 1px solid #ed4d2d;
+  margin: .5rem auto;
+  border-radius: 30px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-animation: btn_scale 1.5s 0s linear infinite;
+  -o-animation: btn_scale 1.5s 0s linear infinite;
+  -moz-animation: btn_scale 1.5s 0s linear infinite;
+  -ms-animation: btn_scale 1.5s 0s linear infinite;
+  animation: btn_scale 1.5s 0s linear infinite;
+}
+
+.zxbtn span {
+  display: block;
+  width: 96%;
+  text-align: center;
+  color: #fff;
+  background: #ed4d2d;
+  margin: 2%;
+  padding: 2% 0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@keyframes btn_scale {
+
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes btn_scale {
+
+  0%,
+  100% {
+    -webkit-transform: scale(0.9);
+  }
+
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@-moz-keyframes btn_scale {
+
+  0%,
+  100% {
+    -moz-transform: scale(0.9);
+  }
+
+  50% {
+    -moz-transform: scale(1.05);
+  }
+}
+
+@-o-keyframes btn_scale {
+
+  0%,
+  100% {
+    -o-transform: scale(0.9);
+  }
+
+  50% {
+    -o-transform: scale(1.05);
+  }
+}
+
+@-ms-keyframes btn_scale {
+
+  0%,
+  100% {
+    -ms-transform: scale(0.9);
+  }
+
+  50% {
+    -ms-transform: scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 内容区域开始 */
+.con {
+  width: 100%;
+}
+
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .75rem;
+  color: #2894FF;
+}
+
+.title p {
+  font-size: .7rem;
+  color: #ff8800;
+}
+
+/* 这些尴尬的场景，你经历过几回？ */
+.box_01,
+.box_02,
+.box_03,
+.box_04,
+.box_05,
+.box_06,
+.box_07 {
+  width: 100%;
+  background-color: #fff;
+  margin-top: .5rem;
+  padding: .5rem .0rem;
+  box-sizing: border-box;
+}
+
+.box_01 .box_01_list {
+  width: 100%;
+  overflow: hidden;
+  margin-top: .5rem;
+}
+
+.box_01 .box_01_list li {
+  width: 50%;
+  height: 5rem;
+  float: left;
+  overflow: hidden;
+  background-color: #ADADAD;
+}
+
+.box_01 .box_01_list li:nth-child(3) img,
+.box_01 .box_01_list li:nth-child(4) img {
+  float: right;
+  margin-right: 0rem;
+}
+
+.box_01 .box_01_list li img {
+  width: 50%;
+  float: left;
+  margin-right: .5rem;
+}
+
+
+
+.box_01 .box_01_list li h3 {
+  font-size: .75rem;
+  color: #fff;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.box_01 .box_01_list li h3:after {
+  content: '';
+  width: 2rem;
+  height: .1rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 54%;
+}
+
+.box_01 .box_01_list li p {
+  font-size: .7rem;
+  color: #fff;
+  margin-top: .3rem;
+}
+
+.box_01_text {
+  width: 50%;
+  float: left;
+  padding-left: .5rem;
+  box-sizing: border-box;
+}
+
+.box_01_text h3:after {
+  left: 0rem !important;
+}
+
+/* 所谓的美白偏方，真的有效？ */
+
+.skin_whitening {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.skin_whitening li {
+  width: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: #C7C7E2;
+  margin-top: .5rem;
+  position: relative;
+}
+
+.skin_whitening li .skin_img {
+  width: 40%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skin_whitening li .skin_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.skin_whitening li .skin_whitening_text {
+  float: right;
+  width: 60%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.skin_whitening li h3 {
+  font-size: .75rem;
+  color: #CE0000;
+}
+
+.skin_whitening li p {
+  font-size: .7rem;
+  color: #333;
+  text-indent: 2em;
+  text-align: left;
+  margin-top: .5rem;
+}
+
+
+.skin_whitening li:nth-child(2) .skin_img {
+  position: absolute;
+  right: 0;
+}
+
+.skin_whitening li:nth-child(2) .skin_whitening_text {
+  float: left;
+}
+
+/* 优贝冷光美白技术再升级 */
+.box_03_ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box_03_ul li {
+  width: 48%;
+  float: left;
+  background-color: #81C0C0;
+  border: 1px solid #81C0C0;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin-top: .5rem;
+
+}
+
+.box_03_ul li:nth-child(2n) {
+  float: right;
+}
+
+.box_03_ul li .top {
+  width: 100%;
+  text-align: center;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.box_03_ul li .top h3 {
+  font-size: .75rem;
+  color: #CE0000;
+}
+
+.box_03_ul li .top h3 span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #81C0C0;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.box_03_ul li .bot {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.box_03_ul li .bot p {
+  font-size: .7rem;
+  color: #333;
+  text-indent: 2em;
+}
+
+/* 不是所有冷光美白都产自“优贝”！ */
+.box_04>p {
+  font-size: .7rem;
+  text-indent: 2em;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.box_04_img {
+  width: 100%;
+  text-align: center;
+}
+
+.box_04_img img {
+  display: block;
+  width: 100%;
+}
+
+/* 30分钟轻松午休美白 */
+.box_05_list {
+  width: 100%;
+  overflow: hidden;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.box_05_list li {
+  width: 48%;
+  text-align: center;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  float: left;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  background-color: #ddd;
+
+}
+
+.box_05_list li:nth-child(2n) {
+  float: right;
+}
+
+
+
+.box_05_list li img {
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.box_05_list li h3 {
+  font-size: .8rem;
+  color: #ff8800;
+}
+
+.box_05_list li h2 {
+  font-size: .7rem;
+}
+
+.box_05_list li span {
+  display: block;
+  width: 2rem;
+  height: .1rem;
+  border-top: 1px solid #ff8800;
+  margin: .3rem auto;
+}
+
+.box_05_list li p {
+  font-size: .7rem;
+}
+
+.box_05_list li:nth-child(5) {
+  width: 100%;
+}
+
+.box_05_list li:nth-child(5) img {
+  width: 25%;
+  float: left;
+  margin-left: 1.8rem;
+}
+
+.box_05_list li .box_05_text {
+  float: right;
+  width: 50%;
+  padding-top: .2rem;
+  box-sizing: border-box;
+}
+
+/* 优贝口腔美齿医师推荐 */
+.box_06 ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box_06 ul li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.box_06 ul li:last-child {
+  float: right;
+}
+
+.box_06 ul li img {
+  display: block;
+  width: 100%;
+}
+
+.box_06 ul li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #CE0000;
+  margin-top: .5rem;
+}
+
+.box_06 ul li p {
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.box_06 ul li a {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #ff8800;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+
+/* 热门问题 */
+.box_07 .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}

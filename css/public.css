@@ -8,7 +8,7 @@
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 120;
 }
 
 .header .header_fl_list,
@@ -102,13 +102,12 @@
 }
 
 
-/* 点击导航列表前 */
-.click_before {
-  transform: rotate(0);
+/* 点击导航列表前 .click_before {
+  transform: rotate(45deg);
   transtion: all .3s linear;
-  -webkit-transform: rotate(0);
+  -webkit-transform: rotate(45deg);
   -webkit-transtion: all .3s linear;
-}
+} */
 
 /* 点击导航列表后 */
 .click_after {
@@ -123,6 +122,35 @@
 
 
 
+/* 左移入动画 */
+.shift_right {
+  animation: shift_right 2s linear;
+}
+
+@keyframes shift_right {
+  0% {
+    transform: translateX(-18rem)
+  }
+
+  100% {
+    transform: translateX(0rem)
+  }
+}
+
+/* 右移入动画 */
+.shift_left {
+  animation: shift_left 2s linear;
+}
+
+@keyframes shift_left {
+  0% {
+    transform: translateX(18rem)
+  }
+
+  100% {
+    transform: translateX(0rem)
+  }
+}
 
 
 
@@ -219,6 +247,7 @@
   margin-bottom: 0rem;
 }
 
+
 .nav .nav_box li:nth-child(5) {
   float: right;
   margin-right: 0rem;
@@ -233,7 +262,7 @@
 
 .nav .nav_box li img {
   width: 2rem;
-  margin-top: .5rem;
+  margin-top: .8rem;
 }
 
 .nav .nav_box li h3 {
@@ -258,7 +287,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  z-index: 2;
+  z-index: 160;
 }
 
 .bottom_button a {
@@ -346,7 +375,7 @@
   height: 100%;
   top: 0;
   visibility: hidden;
-  z-index: 4;
+  z-index: 165;
   width: 10rem;
   background-color: #8080C0;
   overflow-y: auto;
@@ -416,18 +445,6 @@
   margin: 0 auto;
 }
 
-.fl_nav ul li:nth-child(13) a span {
-  margin-right: 1rem;
-}
-
-.fl_nav ul li:nth-child(14) a span {
-  margin-right: 1.6rem;
-}
-
-.fl_nav ul li:last-child a span {
-  margin-right: 2.5rem;
-}
-
 .fl_nav ul li a {
   color: #f0f0f0;
 }
@@ -455,10 +472,281 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  z-index: 3;
+  z-index: 125;
   background: rgba(0, 0, 0, .4);
   max-width: 1024px;
 }
+
+
+
+/* 弹出框 */
+.Popup {
+  width: 15rem;
+  height: 16.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 5px #666;
+  border-radius: .5rem;
+  overflow: hidden;
+  -webkit-animation: rollIn 1.5s 0s linear;
+  -o-animation: rollIn 1.5s 0s linear;
+  -moz-animation: rollIn 1.5s 0s linear;
+  -ms-animation: rollIn 1.5s 0s linear;
+  animation: rollIn 1.5s 0s linear;
+
+}
+
+
+
+
+
+
+.Popup img {
+  display: block;
+  width: 100%;
+}
+
+.Popup img:nth-child(2) {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  z-index: 310;
+  right: 0;
+  top: 0;
+}
+
+.Popup_text {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.scroll_bar {
+  width: 60%;
+  height: auto;
+  font-size: .7rem;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll_bar span {
+  display: inline-block;
+  width: 10rem;
+  color: #ff0000;
+}
+
+
+
+
+
+/* 定义第一个span的animation：时长 动画名字 匀速 循环 正常播放 */
+.first-marquee {
+  -webkit-animation: 25s first-marquee linear infinite normal;
+  animation: 25s first-marquee linear infinite normal;
+  padding-right: 5%;
+}
+
+@keyframes first-marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* 向左移动 */
+  100% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+    display: none;
+  }
+}
+
+.second-marquee {
+  /* 因为要在第一个span播完之前就得出现第二个span，所以就延迟12s才播放 */
+  -webkit-animation: 25s first-marquee linear 12s infinite normal;
+  animation: 25s first-marquee linear 12s infinite normal;
+  padding-right: 5%;
+}
+
+@keyframes second-marquee {
+  0% {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+    display: none;
+  }
+}
+
+
+
+.Popup_text>span {
+  float: right;
+  display: block;
+  font-size: .7rem;
+  text-align: right;
+  color: #04ab86;
+}
+
+
+
+
+.Popup_text input {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1.4rem;
+  padding: 0 .5rem;
+  font-size: .7rem;
+  color: #666;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: .5rem 0rem;
+}
+
+.text_but {
+  width: 100%;
+  display: flex;
+}
+
+.text_but a {
+  flex: 1;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  background-color: #ff8800;
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: .5rem;
+  margin: 0 1rem;
+}
+
+
+
+
+
+.text_but>a:last-child {
+  background-color: #97CBFF;
+}
+
+
+
+@-webkit-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform-origin: center;
+
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@keyframess rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn
+}
+
+/* 制顶小按钮 */
+.scroll_top {
+  width: 2.5rem;
+  height: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 300;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: .5rem;
+  overflow: hidden;
+
+}
+
+.scroll_top img {
+  display: block;
+  width: 100%;
+}
+
+
+/* 错误提示信息 */
+.error_message {
+  width: 10rem;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 5px #666;
+  border-radius: .5rem;
+  overflow: hidden;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.error_message h3 {
+  font-size: .75rem;
+  line-height: 1.3rem;
+}
+
+.error_message h3 span {
+  color: #ff0000;
+  font-size: .8rem;
+}
+
+.error_message p {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+.error_message a {
+  display: block;
+  font-size: .8rem;
+  padding: .1rem .5rem;
+  background-color: #ff8800;
+  color: #fff;
+  border-radius: .5rem;
+}
+
+.error_hide {
+  display: none;
+}
+
+
+
+
 
 
 

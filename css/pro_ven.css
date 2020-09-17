@@ -1,0 +1,643 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: #2894FF;
+}
+
+.title p {
+  font-size: .7rem;
+  color: #ff8800;
+}
+
+.conBox_01,
+.conBox_02,
+.conBox_03,
+.conBox_04,
+.conBox_05,
+.conBox_06,
+.doctor,
+.relevant {
+  width: 100%;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: .5rem;
+}
+
+/* 您有以下牙齿烦恼？ */
+.conBox01_list {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.conBox01_list li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 0rem .3rem;
+  box-sizing: border-box;
+  margin-top: .5rem;
+}
+
+.conBox01_list li img {
+  display: block;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.conBox01_list li h3 {
+  font-size: .7rem;
+  line-height: 1.2rem;
+  color: #333;
+}
+
+/* 想要洁白漂亮美齿 */
+.conBox02_list {
+  width: 98%;
+  margin: .5rem auto;
+  overflow: hidden;
+}
+
+.conBox02_list li {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #D8D8EB;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.conBox02_list li:last-child {
+  margin-right: 0rem;
+}
+
+
+.conBox02_list li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #FF0000;
+}
+
+.conBox02_list li p {
+  font-size: .65rem;
+  margin-bottom: .3rem;
+}
+
+.conBox02_list li p span {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  background: url(../images/pro_ven/conBox_02_01.png)no-repeat center/ 100% 100%;
+  vertical-align: middle;
+  margin-right: .3rem;
+  margin-top: -.2rem;
+}
+
+/* 0.2mm精细雕琢 */
+.conBox04_list {
+  width: 98%;
+  margin: 0rem auto;
+  overflow: hidden;
+}
+
+.conBox04_list li {
+  width: 95%;
+  margin-right: 2.5%;
+  padding: .3rem 0rem .3rem 1rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  float: right;
+  position: relative;
+  background-color: #97CBFF;
+  border-radius: .5rem;
+}
+
+.conBox04_list li:nth-child(2n) {
+  background-color: #D2E9FF;
+
+}
+
+.conBox04_list li i {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: -.5rem;
+  top: -.5rem;
+  background: #57bff0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+
+
+
+.conBox04_list li h3 {
+  font-size: .75rem;
+  color: #F75000;
+}
+
+.conBox04_list li p {
+  font-size: .7rem;
+  color: #333;
+}
+
+
+
+/* 优贝数字美学修复中心 */
+.conBox03_list {
+  width: 98%;
+  margin: .5rem auto;
+  overflow: hidden;
+
+}
+
+.conBox03_list li {
+  width: 23%;
+  margin-right: 2.5%;
+  text-align: center;
+  float: left;
+  border-radius: .5rem;
+  background: #C4E1E1;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.conBox03_list li:last-child {
+  margin-right: 0;
+}
+
+.conBox03_list li i {
+  display: block;
+  font-size: .75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #57bff0;
+  border-radius: 50%;
+  background-color: #fff;
+  font-style: normal;
+}
+
+.conBox03_list li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox03_list li h3 {
+  font-size: .7rem;
+  line-height: 1.5rem;
+}
+
+.zxbtn {
+  width: 100%;
+  text-align: center;
+}
+
+.zxbtn .btn {
+  display: inline-block;
+  font-size: .75rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5rem;
+  background: #ed711f;
+  margin: 0 auto;
+  padding: 0rem .5rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+  box-shadow: 0 2px 15px #ed711f;
+  -webkit-box-shadow: 0 2px 15px #ed711f;
+}
+
+.btn {
+  -webkit-animation: btn_scale 1.5s 0s linear infinite;
+  -o-animation: btn_scale 1.5s 0s linear infinite;
+  -moz-animation: btn_scale 1.5s 0s linear infinite;
+  -ms-animation: btn_scale 1.5s 0s linear infinite;
+  animation: btn_scale 1.5s 0s linear infinite;
+}
+
+@keyframes btn_scale {
+
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes btn_scale {
+
+  0%,
+  100% {
+    -webkit-transform: scale(0.9);
+  }
+
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@-moz-keyframes btn_scale {
+
+  0%,
+  100% {
+    -moz-transform: scale(0.9);
+  }
+
+  50% {
+    -moz-transform: scale(1.05);
+  }
+}
+
+@-o-keyframes btn_scale {
+
+  0%,
+  100% {
+    -o-transform: scale(0.9);
+  }
+
+  50% {
+    -o-transform: scale(1.05);
+  }
+}
+
+@-ms-keyframes btn_scale {
+
+  0%,
+  100% {
+    -ms-transform: scale(0.9);
+  }
+
+  50% {
+    -ms-transform: scale(1.05);
+  }
+}
+
+
+
+
+/* 不止于专业美白 */
+.conBox05_list {
+  width: 98%;
+  margin: .5rem auto;
+  overflow: hidden;
+}
+
+.conBox05_list li {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #B3D9D9;
+  padding: .3rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+}
+
+.conBox05_list li:last-child {
+  margin-right: 0;
+}
+
+.conBox05_list li img {
+  display: block;
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.conBox05_list li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #ff8800;
+}
+
+.conBox05_list li p {
+  text-align: left;
+  font-size: .7rem;
+  color: #333;
+}
+
+/* 现场一对一 */
+.conBox06_list {
+  width: 98%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.conBox06_list li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.conBox06_list li:nth-child(2n) {
+  float: right;
+}
+
+.conBox06_list li img {
+  display: block;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.conBox06_list li h3 {
+  font-size: .7rem;
+  line-height: 1.5rem;
+}
+
+/* 做牙齿贴面请认准专业美牙医生 */
+.doctor .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.doctor .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.doctor .team_box {
+  width: 70%;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.doctor .team_box .introduce {
+  width: 65%;
+}
+
+.doctor .team_box .introduce h3 {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: #0080FF;
+}
+
+.doctor .team_box .introduce p {
+  font-size: .7rem;
+  line-height: 1rem;
+  text-align: left;
+}
+
+.doctor .team_box .introduce p:last-child {
+  margin-top: .5rem;
+}
+
+.doctor .team_box .introduce p span {
+  font-size: .73rem;
+  color: #ff8800;
+  font-weight: 700;
+}
+
+.doctor .team_box .team_img {
+  width: 30%;
+  background-color: #ACD6FF;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.doctor .team_box .team_img img {
+  display: block;
+  width: 100%;
+}
+
+/* 联系按钮 */
+.contact_btn {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+}
+
+.button_iconed_smooth {
+  display: inline-block;
+  position: relative;
+  flex: 1;
+  border-radius: 1rem;
+  width: auto;
+  margin: .3rem 1rem;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+  height: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6293), color-stop(50%, #ff6293), color-stop(50%, #d64874), color-stop(100%, #d64874));
+}
+
+.button_iconed_smooth:last-child {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9999CC), color-stop(50%, #9999CC), color-stop(50%, #5A5AAD), color-stop(100%, #5A5AAD));
+}
+
+
+
+.button_iconed_smooth:before {
+  content: "";
+  position: absolute;
+  border-radius: .8rem;
+  height: 1.5rem;
+  top: .23rem;
+  bottom: 0;
+  left: 1rem;
+  right: .35rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d64874), color-stop(50%, #d64874), color-stop(50%, #ff6293), color-stop(100%, #ff6293));
+}
+
+
+.button_iconed_smooth a {
+  display: block;
+  position: relative;
+  height: 100%;
+  line-height: 2rem;
+  font-family: "Futura-Bold", "Futura LT Book", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: white;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.button_iconed_smooth>span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(50%, #ececec), color-stop(50%, white), color-stop(100%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button_smooth {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6293), color-stop(100%, #d64874));
+}
+
+.button_smooth:before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d64874), color-stop(100%, #ff6293));
+}
+
+.button_smooth a span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.button_iconed_smooth a>span {
+  padding-left: 4rem;
+}
+
+.button_iconed_smooth i {
+  position: absolute;
+  font-style: normal;
+  font-size: .75rem;
+  height: 2rem;
+  left: -1px;
+  padding-left: 25px;
+  padding-right: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #ddd), color-stop(100%, #ddd));
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  overflow: hidden;
+}
+
+
+.button_iconed_smooth i:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: .35rem;
+  top: .23rem;
+  height: 1.5rem;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ddd), color-stop(50%, #ddd), color-stop(50%, white), color-stop(100%, white));
+  border-top-left-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+}
+
+.button_iconed_smooth i span {
+  position: relative;
+  color: #d64874;
+
+}
+
+.button_iconed_smooth i span img {
+  width: 1.5rem;
+  vertical-align: middle;
+  margin-top: -.2rem;
+
+}
+
+
+
+.button_iconed_smooth:before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d64874), color-stop(100%, #ff6293));
+}
+
+.button_iconed_smooth:last-child:before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5A5AAD), color-stop(100%, #9999CC));
+}
+
+
+
+.button_iconed_smooth i {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #ddd));
+}
+
+.button_iconed_smooth i:before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ddd), color-stop(100%, white));
+}
+
+
+/* 热门问题 */
+.relevant .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}

@@ -1,0 +1,494 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+/* title */
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: #2894FF;
+}
+
+.title p {
+  font-size: .7rem;
+  color: #ff8800;
+  position: relative;
+}
+
+.title p:before {
+  content: '';
+  position: absolute;
+  top: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: .1rem;
+  border-top: 2px solid #FF0000;
+}
+
+/* 牙周病的分类 */
+.conBox_01,
+.conBox_02,
+.conBox_03,
+.conBox_04,
+.conBox_05,
+.conBox_06,
+.conBox_07,
+.conBox_08 {
+  width: 100%;
+  background-color: #fff;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  margin-top: .5rem;
+}
+
+.conBox_list {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.conBox_list ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.conBox_list ul li {
+  flex: 1;
+  height: 5.5rem;
+  margin: 0 .5rem;
+}
+
+.conBox_list ul li:first-child {
+  width: 100%;
+  height: 5.5rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: #F75000;
+}
+
+.conBox_list ul li:last-child {
+  width: 100%;
+  height: 5.5rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #9999CC;
+}
+
+.conBox_list ul li img {
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+}
+
+.conBox_list ul li h3 {
+  font-size: .73rem;
+  color: #fff;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.conBox_list ul li p {
+  font-size: .7rem;
+  margin-left: .5rem;
+}
+
+.conBox_text {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.conBox_text i {
+  display: block;
+  font-size: .73rem;
+  line-height: 1.5rem;
+  color: #FF2D2D;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.conBox_text p {
+  font-size: .7rem;
+  text-indent: 2em;
+  line-height: 1.2rem;
+  border: 1px dashed #2894FF;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+/* 如何判断自己是否患有牙周病？ */
+.conBox_02 {
+  text-align: center;
+}
+
+.conBox02_list {
+  width: 100%;
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.conBox02_list li {
+  flex: 1;
+  margin: 0 .2rem;
+  border: 1px solid #666;
+  text-align: center;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  padding: .3rem;
+  box-sizing: border-box;
+}
+
+
+
+.conBox02_list li h1 {
+  color: #0e6eb8;
+  line-height: 1.5rem;
+  font-size: .75rem;
+}
+
+.conBox02_list li p {
+  font-size: .7rem;
+  line-height: 1.2rem;
+}
+
+.conBox02_list li img {
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.conBox_02>p {
+  font-size: .7rem;
+  color: #333;
+  text-align: center;
+}
+
+.conBox_02>a,
+.conBox_04>a {
+  width: 20%;
+  font-size: .7rem;
+  border-radius: 20px;
+  background-color: #0e6eb8;
+  color: #ffff;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+/* 数字化牙周治疗体系 */
+.conBox_03_img {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.conBox_03_img .conBox_03_topImg {
+  width: 100%;
+  height: 10rem;
+  background: url(../images/periodontal_restoration/conBox_03_01.png)no-repeat center/100% 100%;
+  overflow: hidden;
+}
+
+.conBox_03_img .conBox_03_topImg p {
+  width: 45%;
+  margin-top: 1rem;
+  margin-left: .5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.conBox_03_img .conBox_03_butImg {
+  width: 100%;
+  overflow: hidden;
+}
+
+.conBox_03_img .conBox_03_butImg img {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.conBox_03_img .conBox_03_butImg .conBox_03_text {
+  width: 50%;
+  float: right;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+.conBox_03_img .conBox_03_butImg .conBox_03_text p {
+  font-size: .7rem;
+}
+
+/* PRT牙周组织再生技术 */
+.conBox_04 {
+  text-align: center;
+}
+
+.conBox_04 .conBox_04_text {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.conBox_04 .conBox_04_text li {
+  flex: 1;
+  padding: .3rem;
+  box-sizing: border-box;
+}
+
+.conBox_04 .conBox_04_text li p {
+  font-size: .7rem;
+  text-indent: 2em;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+.conBox_04 .conBox_04_text li img {
+  display: block;
+  width: 100%;
+}
+
+/* 优贝口腔数字化牙周治疗系统 & 传统治疗技术 */
+.conBox_05_list,
+.conBox_05_list02 {
+  width: 100%;
+  display: flex;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.conBox_05_list li,
+.conBox_05_list02 li {
+  flex: 1;
+  margin: 0rem .2rem;
+  text-align: center;
+}
+
+.conBox_05_list li h3 {
+  font-size: .7rem;
+  height: 2rem;
+  background-color: #0e6eb8;
+  color: #fff;
+  padding: .3rem 0rem;
+}
+
+.conBox_05_list li:first-child,
+.conBox_05_list li:last-child {
+  line-height: 2rem;
+}
+
+.conBox_05_list li p {
+  font-size: .7rem;
+  height: 2.5rem;
+  line-height: 1.2rem;
+  background-color: #ACD6FF;
+  border-bottom: 1px solid #fff;
+  padding: .2rem 0rem 0rem 0rem;
+}
+
+.conBox_05_list li:first-child p {
+  line-height: 2.5rem;
+
+}
+
+.conBox_05_list li:nth-child(2) p:nth-child(3),
+.conBox_05_list li:nth-child(2) p:nth-child(5),
+.conBox_05_list li:nth-child(3) p:nth-child(5) {
+  line-height: 2.5rem;
+}
+
+.conBox_05_list02 {
+  margin-top: 0rem;
+  padding: .1rem;
+}
+
+.conBox_05_list02 li {
+  background-color: #66B3FF;
+  font-size: .7rem;
+  padding: .3rem 0rem;
+  border-radius: .5rem;
+  margin: 0rem .1rem;
+}
+
+.conBox_05_list02 li h4 {
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.conBox_05_list02 li p {
+  line-height: 1.2rem;
+}
+
+/* 优贝-倡导健康、专业、严谨、温馨的齿科技术 */
+.conBox_06_list {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.conBox_06_list li {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px dashed #ACD6FF;
+  margin-top: .5rem;
+  padding-bottom: .3rem;
+  box-sizing: border-box;
+}
+
+.conBox_06_list li img {
+  display: block;
+  width: 30%;
+  float: left;
+  border-radius: .5rem;
+}
+
+.conBox_06_list li .conBox_06_text {
+  width: 70%;
+  float: right;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+.conBox_06_list li .conBox_06_text h3 {
+  font-size: .7rem;
+  color: #333;
+}
+
+.conBox_06_list li .conBox_06_text span {
+  display: block;
+  margin: 0rem auto;
+  width: 0;
+  height: 0;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  border-top: .5rem solid #EA0000;
+}
+
+.conBox_06_list li .conBox_06_text p {
+  text-align: left;
+  text-indent: 2em;
+  font-size: .7rem;
+}
+
+
+/* 优贝口腔美齿医师推荐 */
+.conBox_07 ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.conBox_07 ul li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.conBox_07 ul li:last-child {
+  float: right;
+}
+
+.conBox_07 ul li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox_07 ul li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #CE0000;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li p {
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.conBox_07 ul li a {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #ff8800;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+
+/* 热门问题 */
+.conBox_08 .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}

@@ -1,0 +1,434 @@
+/* banner 部分 */
+.banner {
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: .8rem;
+  color: #2894FF;
+}
+
+.title p {
+  font-size: .7rem;
+  color: #ff8800;
+}
+
+/* 歪牙不齐 远离美丽 */
+.conBox_01,
+.conBox_02,
+.conBox_03,
+.conBox_04,
+.conBox_05,
+.conBox_06,
+.conBox_07,
+.conBox_08 {
+  width: 100%;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  margin-top: .5rem;
+  background-color: #fff;
+
+}
+
+.conBox01_list {
+  width: 100%;
+  display: flex;
+  margin-top: .5rem;
+}
+
+.conBox_01 li {
+  flex: 1;
+  text-align: center;
+}
+
+.conBox_01 li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox_01 li h3 {
+  font-size: .7rem;
+  display: inline-block;
+  padding: .2rem .3rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+  background-color: #1e5e82;
+  color: #fff;
+}
+
+/* 优贝数字化矫正平台 */
+.conBox02_list {
+  width: 98%;
+  margin: .5rem auto;
+  padding: .5rem 0rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.conBox02_list img {
+  display: block;
+  width: 35%;
+  float: left;
+}
+
+.conBox02_list>p {
+  width: 60%;
+  font-size: .7rem;
+  text-indent: 2em;
+  float: right;
+}
+
+.conBox02_but {
+  width: 98%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.conBox02_but li {
+  width: 30%;
+  text-align: center;
+  float: left;
+  border: 1px solid #ea9da2;
+  margin-top: .5rem;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+}
+
+.conBox02_but li:nth-child(2),
+.conBox02_but li:nth-child(5) {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.conBox02_but li:last-child {
+  margin-right: 0;
+}
+
+.conBox02_but li img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.conBox02_but li h3 {
+  font-size: .7rem;
+  margin-top: .3rem;
+}
+
+/* 优贝数字化矫正过程 */
+.conBox03_list {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.conBox03_list li {
+  margin: .5rem .3rem;
+  border: 1px solid #ea9da2;
+  text-align: center;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: #ea9da2;
+}
+
+.conBox03_list li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox03_list li h3 {
+  font-size: .7rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+/* 个性化美学定制 */
+.conBox04_list {
+  width: 98%;
+  margin: .5rem auto;
+  display: flex;
+}
+
+.conBox04_list li {
+  flex: 1;
+  margin: 0 .25rem;
+  box-shadow: 0 0 25px #cccccc;
+  -webkit-box-shadow: 0 0 25px #cccccc;
+  border-radius: 153px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.conBox04_list li img {
+  display: block;
+  width: 100%;
+}
+
+
+.conBox04_list li h3 {
+  font-size: .75rem;
+  color: #ff0000;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.conBox04_list li p {
+  font-size: .7rem;
+  padding: 0rem .5rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #333;
+}
+
+/* 3种不同矫正 */
+.conBox05_list {
+  width: 100%;
+  display: block;
+  display: flex;
+}
+
+.conBox05_list li {
+  flex: 1;
+  margin: .5rem .25rem;
+  background-color: #e9989f;
+}
+
+.conBox05_list li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox05_list li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.conBox05_list li p {
+  font-size: .7rem;
+  color: #fff;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+}
+
+/* 3M自锁金属托槽 */
+.conBox_06 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.conBox_06 img {
+  display: block;
+  width: 35%;
+  float: left;
+  margin-top: .5rem;
+}
+
+.conBox_06>p {
+  margin-top: .5rem;
+  width: 60%;
+  float: right;
+  font-size: .7rem;
+  text-indent: 2em;
+}
+
+/* 优贝口腔美齿医师推荐 */
+.conBox_07 ul {
+  width: 100%;
+  padding: .3rem .5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.conBox_07 ul li:last-child {
+  float: right;
+}
+
+.conBox_07 ul li img {
+  display: block;
+  width: 100%;
+}
+
+.conBox_07 ul li h3 {
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #CE0000;
+  margin-top: .5rem;
+}
+
+.conBox_07 ul li p {
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.conBox_07 ul li a {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #ff8800;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+
+/* 热门问题 */
+.conBox_08 .relevant_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.relevant_list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.relevant_list ul li {
+  width: 48%;
+  height: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: .3rem 0rem;
+  overflow: hidden;
+  padding: 0rem.3rem;
+  box-sizing: border-box;
+}
+
+.relevant_list ul li:nth-child(2n) {
+  float: right;
+}
+
+.relevant_list ul li a {
+  display: block;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.relevant_list ul li:first-child,
+.relevant_list ul li:nth-child(4),
+.relevant_list ul li:nth-child(5),
+.relevant_list ul li:nth-child(8) {
+  background: #018ed5;
+}
+
+.relevant_list ul li:nth-child(2),
+.relevant_list ul li:nth-child(3),
+.relevant_list ul li:nth-child(6),
+.relevant_list ul li:nth-child(7) {
+  background: #67bce5;
+}
+
+
+
+
+
+
+.but_btn {
+  display: block;
+  width: 6rem;
+  height: 1.2rem;
+  font-size: .75rem;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  margin: .5rem auto;
+  border-radius: .5rem;
+  background-color: #f5666f;
+  box-shadow: 0 4px 0 #c64850;
+  -webkit-animation: btn_scale 1.5s 0s linear infinite;
+  -o-animation: btn_scale 1.5s 0s linear infinite;
+  -moz-animation: btn_scale 1.5s 0s linear infinite;
+  -ms-animation: btn_scale 1.5s 0s linear infinite;
+  animation: btn_scale 1.5s 0s linear infinite;
+}
+
+
+
+
+
+
+@keyframes btn_scale {
+
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes btn_scale {
+
+  0%,
+  100% {
+    -webkit-transform: scale(0.9);
+  }
+
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@-moz-keyframes btn_scale {
+
+  0%,
+  100% {
+    -moz-transform: scale(0.9);
+  }
+
+  50% {
+    -moz-transform: scale(1.05);
+  }
+}
+
+@-o-keyframes btn_scale {
+
+  0%,
+  100% {
+    -o-transform: scale(0.9);
+  }
+
+  50% {
+    -o-transform: scale(1.05);
+  }
+}
+
+@-ms-keyframes btn_scale {
+
+  0%,
+  100% {
+    -ms-transform: scale(0.9);
+  }
+
+  50% {
+    -ms-transform: scale(1.05);
+  }
+}
