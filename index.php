@@ -328,6 +328,7 @@
         <img src="./images/index/con_title.png" alt="">
         <h3>在线预约</h3><span>(24小时在线 极速回复)</span>
       </div>
+
       <div class="Online_box">
         <div class="Online_text">
           <div class="Online_fl">
@@ -361,7 +362,6 @@
               <option value="智齿">智齿</option>
               <option value="复诊">复诊</option>
             </select>
-            <!-- <input type="text" name="username" placeholder="请填写预约项目"> -->
           </div>
 
           <div class="Online_but">
